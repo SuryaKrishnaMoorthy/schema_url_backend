@@ -3,7 +3,7 @@ const resourceName = 'schema';
 
 async function getAllSchemas (req, res, next) {
   const response = await model.getAllSchemas();
-  res.json({"snacks": response });
+  res.json({"schemas": response });
 };
 
 async function getOneSchema (req, res, next) {
