@@ -7,10 +7,10 @@ module.exports = {
     client: 'pg',
     connection: `postgres://localhost/${process.env.DATABASE_NAME}`,
     migrations: {
-      directory: path.join(__dirname, 'db', 'migrations')
+      directory: path.join(__dirname, 'src', 'db', 'migrations')
     },
     seeds: {
-      directory: path.join(__dirname, 'db', 'seeds')
+      directory: path.join(__dirname, 'src',  'db', 'seeds')
     }
   },
 
